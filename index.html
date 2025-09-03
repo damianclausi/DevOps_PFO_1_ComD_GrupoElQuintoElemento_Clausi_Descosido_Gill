@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PFO 01</title>
 </head>
+
 <body>
     <h1>Práctica Formativa Obligatoria 1</h1>
     <h2>Seminario de actualizacion dev ops</h2>
     <h3>Clausi Damian, Descosido Cristian, Gill Cesar Antonio</h3>
+    <style>
+        #user-form {
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const username = document.getElementById("username").value;
+            if (username.length < 3) {
+                alert("El nombre de usuario debe tener al menos 3 caracteres");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
+
 </html>
